@@ -11,5 +11,9 @@ namespace PartyInvites.Controllers
             ViewBag.Salamu = hour < 12 ? "Good Morming" : "Good Afternoon";
             return View("MyView");
         }
+        public ViewResult RsvpForm()
+        {
+            return View();
+        }
     }
 }
