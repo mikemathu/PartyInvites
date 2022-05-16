@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System;
+using Microsoft.AspNetCore.Mvc;
+using PartyInvites.Models;
 
 namespace PartyInvites.Controllers
 {
@@ -11,8 +13,17 @@ namespace PartyInvites.Controllers
             ViewBag.Salamu = hour < 12 ? "Good Morming" : "Good Afternoon";
             return View("MyView");
         }
+
+        [HttpGet]
         public ViewResult RsvpForm()
         {
+            return View();
+        }
+
+        [HttpPost]
+        public ViewResult RsvpForm(GuestResponse guestResponse)
+        {
+            //TODO: store response from guest
             return View();
         }
     }
