@@ -22,6 +22,7 @@ namespace PartyInvites.Controllers
         /*The RsvpForm action method calls the View method without an argument, which tells MVC to render 
           the default view associated with the action method, which is a view with the same name as the action 
            method, in this case, RsvpForm.cshtml*/
+        //Get use only for GET requests
 
         [HttpGet]
         public ViewResult RsvpForm()
@@ -29,6 +30,7 @@ namespace PartyInvites.Controllers
             return View();
         }
 
+        //accepts GuestResponse object. HttpPost attribute tels the MVC that the method wil be dealing with POST requests
         [HttpPost]
         public ViewResult RsvpForm(GuestResponse guestResponse)
         {

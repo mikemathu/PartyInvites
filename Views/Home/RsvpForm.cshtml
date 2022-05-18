@@ -1,4 +1,5 @@
-﻿@model PartyInvites.Models.GuestResponse
+﻿
+@model PartyInvites.Models.GuestResponse //a @model Razor expression, which is used to create a strongly typed view. A strongly typed view is intended to render a specific model type, and if I specify the type I want to work with (the GuestResponse class in the PartyInvites.Models namespace in this case),
 
 @{
 	Layout = null;
@@ -26,7 +27,7 @@
 			</p>
 			<p>
 				<label>Will you attend?</label>
-				<select asp-for="Willttend">
+				<select asp-for="WillAttend">
 					<option value="">Choose an Option</option>
 					<option value="true">Yes I will be there.</option>
 					<option value="false">No I can't come.</option>
