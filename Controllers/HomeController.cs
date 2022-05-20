@@ -17,6 +17,7 @@ namespace PartyInvites.Controllers
             ViewBag.Subject = "Work Harder";
 
             return View("MyView");
+
         }
 
         /*The RsvpForm action method calls the View method without an argument, which tells MVC to render 
@@ -29,6 +30,7 @@ namespace PartyInvites.Controllers
         {
             return View();
         }
+        
 
         //accepts GuestResponse object. HttpPost attribute tels the MVC that the method wil be dealing with POST requests
         [HttpPost]

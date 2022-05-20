@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Controllers",
+    "\\Models",
+    "\\Views",
+    "\\Views\\Home"
   ],
-  "SelectedNode": "\\C:\\C#\\repos\\MVC\\PartyInvites",
   "PreviewInSolutionExplorer": true
 }
